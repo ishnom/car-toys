@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - LuxCars Premium Car Toys</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="light-mode">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>LuxCars</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-buttons">
+                <button id="theme-toggle" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="product-details">
+            <div class="container">
+                <div class="breadcrumb">
+                    <a href="index.html">Home</a> / 
+                    <a href="shop.html">Shop</a> / 
+                    <span id="product-name">Product Name</span>
+                </div>
+                <div class="product-container">
+                    <div class="product-gallery">
+                        <div class="main-image">
+                            <img id="main-product-image" src="https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" alt="Product Image">
+                            <div class="image-zoom-overlay">
+                                <i class="fas fa-search-plus"></i>
+                            </div>
+                        </div>
+                        <div class="thumbnail-images">
+                            <img src="https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80" alt="Thumbnail 1" class="active">
+                            <img src="https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80&ar=4:3" alt="Thumbnail 2">
+                            <img src="https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80&ar=1:1" alt="Thumbnail 3">
+                            <img src="https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?ixlib=rb-1.2.1&auto=format&fit=crop&w=200&q=80&ar=16:9" alt="Thumbnail 4">
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h1 id="product-title">Luxury Sports Car</h1>
+                        <div class="product-meta">
+                            <p class="product-category">Category: <span id="product-category">Modern Cars</span></p>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(24 reviews)</span>
+                            </div>
+                        </div>
+                        <p class="product-price">$<span id="product-price">129.99</span></p>
+                        <div class="product-description">
+                            <p id="product-description">This premium 1:18 scale luxury sports car toy is meticulously crafted with attention to detail. Features include opening doors, hood, and trunk, as well as realistic interior details. Made from high-quality die-cast metal with plastic components, this collectible model is perfect for enthusiasts and collectors alike.</p>
+                        </div>
+                        <div class="product-features">
+                            <h3>Features:</h3>
+                            <ul id="product-features">
+                                <li>Die-cast metal body with plastic details</li>
+                                <li>Opening doors, hood, and trunk</li>
+                                <li>Detailed interior and dashboard</li>
+                                <li>Rubber tires with realistic tread patterns</li>
+                                <li>Authentic paint finish</li>
+                                <li>Display stand included</li>
+                            </ul>
+                        </div>
+                        <div class="product-actions">
+                            <div class="quantity-selector">
+                                <button class="quantity-btn minus">-</button>
+                                <input type="number" value="1" min="1" id="quantity">
+                                <button class="quantity-btn plus">+</button>
+                            </div>
+                            <button class="btn btn-primary add-to-cart-detail" id="add-to-cart-btn" data-id="1">Add to Cart</button>
+                        </div>
+                        <div class="product-meta-info">
+                            <p><i class="fas fa-shipping-fast"></i> Free shipping on orders over $100</p>
+                            <p><i class="fas fa-box"></i> In stock, ready to ship</p>
+                            <p><i class="fas fa-shield-alt"></i> 30-day money-back guarantee</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="related-products">
+            <div class="container">
+                <h2 class="section-title">You May Also Like</h2>
+                <div class="products">
+                    <!-- Related products will be dynamically loaded here via JavaScript -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LuxCars</h3>
+                    <p>Premium car toys for collectors and enthusiasts.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Luxury Lane, Beverly Hills, CA</p>
+                    <p><i class="fas fa-phone"></i> (800) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@luxcars.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 LuxCars. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="image-zoom-modal" id="image-zoom-modal">
+        <span class="close-modal">&times;</span>
+        <img id="zoomed-image" src="/placeholder.svg" alt="Zoomed product image">
+    </div>
+
+    <script src="script.js"></script>
+    <script src="product.js"></script>
+</body>
+</html>

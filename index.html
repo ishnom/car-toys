@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxCars - Premium Car Toys</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="light-mode">
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>LuxCars</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="cart.html">Cart <span id="cart-count">0</span></a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-buttons">
+                <button id="theme-toggle" aria-label="Toggle dark/light mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-btn" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1>Premium Car Toys Collection</h1>
+                    <p>Discover our exquisite selection of modern and classic car toys</p>
+                    <a href="shop.html" class="btn btn-primary">Shop Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured">
+            <div class="container">
+                <h2 class="section-title">Featured Collections</h2>
+                <div class="categories">
+                    <div class="category">
+                        <img src="https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Modern Cars">
+                        <div class="category-content">
+                            <h3>Modern Cars</h3>
+                            <a href="shop.html?category=modern" class="btn btn-secondary">View Collection</a>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <img src="https://images.unsplash.com/photo-1566024164372-0281f1133aa6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Classic Cars">
+                        <div class="category-content">
+                            <h3>Classic Cars</h3>
+                            <a href="shop.html?category=classic" class="btn btn-secondary">View Collection</a>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <img src="https://images.unsplash.com/photo-1594787318286-3d835c1d207f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Premium Collection">
+                        <div class="category-content">
+                            <h3>Premium Collection</h3>
+                            <a href="shop.html?category=premium" class="btn btn-secondary">View Collection</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bestsellers">
+            <div class="container">
+                <h2 class="section-title">Bestsellers</h2>
+                <div class="products">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Luxury Sports Car">
+                            <div class="quick-view">
+                                <button class="btn btn-secondary">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Luxury Sports Car</h3>
+                            <p class="price">$129.99</p>
+                            <button class="btn btn-primary add-to-cart" data-id="1" data-name="Luxury Sports Car" data-price="129.99">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1566024164372-0281f1133aa6?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Vintage Roadster">
+                            <div class="quick-view">
+                                <button class="btn btn-secondary">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Vintage Roadster</h3>
+                            <p class="price">$149.99</p>
+                            <button class="btn btn-primary add-to-cart" data-id="2" data-name="Vintage Roadster" data-price="149.99">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1594787318286-3d835c1d207f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Premium SUV">
+                            <div class="quick-view">
+                                <button class="btn btn-secondary">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Premium SUV</h3>
+                            <p class="price">$179.99</p>
+                            <button class="btn btn-primary add-to-cart" data-id="3" data-name="Premium SUV" data-price="179.99">Add to Cart</button>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://images.unsplash.com/photo-1581235720704-06d3acfcb36f?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Classic Convertible">
+                            <div class="quick-view">
+                                <button class="btn btn-secondary">Quick View</button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3>Classic Convertible</h3>
+                            <p class="price">$159.99</p>
+                            <button class="btn btn-primary add-to-cart" data-id="4" data-name="Classic Convertible" data-price="159.99">Add to Cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="container">
+                <h2>Join Our Newsletter</h2>
+                <p>Subscribe to receive updates on new arrivals and special offers</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>LuxCars</h3>
+                    <p>Premium car toys for collectors and enthusiasts.</p>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest-p"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="shop.html">Shop</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 123 Luxury Lane, Beverly Hills, CA</p>
+                    <p><i class="fas fa-phone"></i> (800) 123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@luxcars.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 LuxCars. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
